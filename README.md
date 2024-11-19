@@ -27,3 +27,28 @@ This project demonstrates how to run a Go program from a Python script and pass 
    ```bash
    git clone https://github.com/korkuthuseyin/python_run_golang.git
    cd python_run_golang
+
+## Example Usage
+
+### Step 1: Build the Go Program
+
+First, ensure that the Go program is compiled by running the following command in the directory where `main.go` is located:
+
+```bash
+go build -o go_built main.go
+```
+ ### Step 2: Run Python file with arguments
+
+ ```bash
+python3 main.py 'arg1 arg2 arg3'
+```
+Note that your arguments should be in the single quote for sending these to go file as a one string
+
+## Example Output
+```
+Output from gomat:
+Arguments passed to the program:
+Argument 1: arg1
+Argument 2: arg2
+Argument 3: arg3
+```
